@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>All Reviews</title>
+</head>
+<body>
+
+<header>
+    <h1>A list of all reviews</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"> <a th:href="@{/review(id=${review.id})}" th:text="${review.title}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>Matt Welfley</small>
+</footer>
+
+</body>
+</html>

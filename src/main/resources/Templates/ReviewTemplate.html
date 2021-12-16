@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${reviewModel.title}">Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 th:text="${reviewModel.title}"> A Review</h1>
+    </header>
+
+    <main>
+        <ul>
+            <p><a href="/reviews">Review</a></p>
+            <li th:text="${reviewModel.title}"></li>
+        </ul>
+        <h2 th:text="${reviewModel.reviewCategory}"></h2>
+    </main>
+
+</body>
+</html>
