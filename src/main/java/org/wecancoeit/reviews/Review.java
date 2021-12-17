@@ -8,7 +8,7 @@ public class Review {
     private String reviewCategory;
     private String content;
 
-    public Review (long id, String title, String imageUrl, String reviewCategory, String content ){
+    public Review(long id, String title, String imageUrl, String reviewCategory, String content) {
         this.id = id;
         this.title = title;
         this.imageUrl = imageUrl;
@@ -16,22 +16,23 @@ public class Review {
         this.content = content;
     }
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
-    public String getTitle(){
+    public String getTitle() {
         return title;
     }
 
-    public String getImageUrl(){
+    public String getImageUrl() {
         return imageUrl;
     }
 
-    public String getReviewCategory(){
+    public String getReviewCategory() {
         return reviewCategory;
     }
-    public String getContent(){
+
+    public String getContent() {
         return content;
     }
 }
